@@ -1,6 +1,6 @@
 
 
-public class LeecodeNo268 {
+public class LeetCodeNo268 {
     public static void main(String[] args) {
         int[] arr = {0,1};
         
@@ -23,6 +23,6 @@ public class LeecodeNo268 {
                 return idx;
             }
         }
-        return arr.length-1;
+        return arr.length;
     }
 }
