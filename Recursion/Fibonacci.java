@@ -10,6 +10,5 @@ public class Fibonacci {
             return n;
         }
         return fibo(n-1) + fibo(n-2);
-        
     }        
 }
