@@ -3,6 +3,7 @@ public class LeetCodeNo2119 {
         int num = 1800;
         System.out.println(isSameAfterReversals(num));
     }
+    
     static boolean isSameAfterReversals(int num) {
         if(num/10==0){
             return true;
