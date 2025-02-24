@@ -4,12 +4,15 @@ public class LeetCodeNo121 {
         System.out.println(maxProfit(prices));
     }
     static int maxProfit(int[] prices) {
-        int maxprofit = 0;
+        int maxProfit = 0;
         int minPrice = Integer.MAX_VALUE;
         for(int i = 0; i<prices.length; i++){
-            minPrice = Math.min(minPrice, prices[i]);
-            maxprofit = Math.max(maxprofit, prices[i] - minPrice);
+            if(minPrice>prices[i])
+                minPrice = prices[i];
+
+            if(maxProfit<prices[i]-minPrice)
+                maxProfit = prices[i]-minPrice;
         }
-        return maxprofit;
+        return maxProfit;
     }
 }
