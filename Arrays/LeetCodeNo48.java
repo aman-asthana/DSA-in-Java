@@ -15,13 +15,13 @@ public class LeetCodeNo48{
                 matrix[j][i] = temp;
             }
         }
-        for(int i = 0; i< matrix.length; i++){
+        for (int[] matrix1 : matrix) {
             int start = 0;
-            int end = matrix[i].length-1;
-            while(start<=end){
-                int temp = matrix[i][start];
-                matrix[i][start] = matrix[i][end];
-                matrix[i][end] = temp;
+            int end = matrix1.length - 1;
+            while (start<=end) {
+                int temp = matrix1[start];
+                matrix1[start] = matrix1[end];
+                matrix1[end] = temp;
                 start++;
                 end--;
             }
